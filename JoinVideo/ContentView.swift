@@ -23,6 +23,7 @@ struct ContentView: View {
                     .padding()
             } else if let videoURL = videoURL {
                 VideoPlayer(player: AVPlayer(url: videoURL))
+                    .frame(height:200)
                     .onAppear {
                         // No action needed here; VideoPlayer handles video playback.
                     }
